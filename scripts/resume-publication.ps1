@@ -35,7 +35,7 @@ $base = "https://pharos-skill-chain-flow.shoupeorg.workers.dev"
 $ui = Invoke-WebRequest -Uri "$base/" -UseBasicParsing -TimeoutSec 30
 $meta = Invoke-RestMethod -Uri "$base/api/meta" -TimeoutSec 30
 $manifest = Invoke-RestMethod -Uri "$base/evidence/manifest.json" -TimeoutSec 30
-if ($ui.StatusCode -ne 200 -or -not $meta.readOnly -or -not $manifest.records) {
+if ($ui.StatusCode -ne 200 -or -not $meta.readOnly -or -not $manifest.runs) {
   throw "Public verification failed."
 }
 
