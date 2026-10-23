@@ -1,7 +1,7 @@
 # Status
 
 - Project: Pharos Skill + Chain MCP Flow
-- Stage: VERIFIED_LOCALLY_READY_TO_PUBLISH
+- Stage: VERIFIED_LOCALLY_PUBLICATION_AUTH_REQUIRED
 - Date: 2026-10-23
 - No substitute application has been implemented.
 
@@ -30,7 +30,12 @@ The earlier gate incorrectly required a separate SkillEngine API. The documented
 
 ## Remaining
 
-- Publish the verified source to GitHub, deploy once, and verify the public UI/API.
+- Run `scripts/resume-publication.ps1` once in the normal interactive Windows terminal. It publishes the verified commit, deploys once, persists the generated D1 binding, and verifies the public UI/API.
+
+## Environment blocker
+
+- GitHub repository creation succeeded at `https://github.com/shoupeorg/pharos-skill-chain-flow`.
+- The managed sandbox cannot launch Git Credential Manager (`cannot spawn sh`) and Wrangler reports that its interactive session is unavailable in a non-interactive environment. These operations were each attempted once and were not retried.
 
 ## Safety
 
