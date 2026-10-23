@@ -1,0 +1,25 @@
+{
+  "evidenceVersion": "1.1",
+  "capturedAt": "2026-10-23",
+  "status": "BLOCKED_ON_DOCUMENTED_SKILL_PREREQUISITE",
+  "correctedInterpretation": "The documented agent-loaded SKILL.md mechanism is accepted as genuine Skill Engine execution; no separate API is required.",
+  "installedSkill": {
+    "name": "pharos-skill-engine",
+    "version": "0.1.0",
+    "source": "https://github.com/PharosNetwork/pharos-skill-engine",
+    "installedPath": ".agents/skills/pharos-skill-engine",
+    "installationMechanism": "npx skills add",
+    "skillReadCompletely": true
+  },
+  "prerequisite": {
+    "castAvailable": false,
+    "officialInstallerAttempted": true,
+    "installerResult": "Bash/Service/CreateInstance/E_ACCESSDENIED",
+    "skillInstruction": "Stop when Foundry installation fails; do not use an alternative RPC workaround."
+  },
+  "chainMcpDiscoveryReused": true,
+  "historicalEvidencePreserved": "evidence/foundation-gate-v1.json",
+  "substituteBuilt": false,
+  "transactionsPerformed": false,
+  "prosSpent": "0"
+}

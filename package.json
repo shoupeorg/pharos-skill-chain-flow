@@ -1,0 +1,8 @@
+{
+  "name":"pharos-skill-chain-flow",
+  "version":"1.0.0",
+  "private":true,
+  "type":"module",
+  "scripts":{"test":"node --test","build":"rollup -c","check":"npm test && npm run build","deploy":"npm run build && wrangler deploy --no-bundle","skill:evaluate":"node scripts/evaluate-readiness.mjs"},
+  "devDependencies":{"@rollup/plugin-node-resolve":"16.0.3","rollup":"4.64.9","wrangler":"4.151.1"}
+}

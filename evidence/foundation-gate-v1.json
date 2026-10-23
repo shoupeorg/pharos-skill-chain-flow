@@ -1,0 +1,32 @@
+{
+  "evidenceVersion": "1.0",
+  "capturedAt": "2026-10-23",
+  "status": "BLOCKED_AT_FOUNDATION_GATE",
+  "chainMcp": {
+    "available": true,
+    "invokedTool": "mcp__pharos__get_chain_info",
+    "result": {
+      "name": "Pharos",
+      "chainId": 1672,
+      "chainIdHex": "0x688",
+      "chainIdMatches": true,
+      "latestBlock": "21050951",
+      "nativeSymbol": "PROS",
+      "clientVersion": "portal/1.0.0",
+      "rpcUrl": "https://rpc.pharos.xyz"
+    },
+    "officialDocumentation": "https://docs.pharos.xyz/tooling-and-infrastructure/mcp.md"
+  },
+  "skillEngine": {
+    "callableToolAvailable": false,
+    "matchingToolSchemas": [],
+    "officialDocumentation": "https://docs.pharos.xyz/tooling-and-infrastructure/pharos-skill-engine-guide.md",
+    "officialUiChecked": "https://ai.pharos.xyz/skill-engine",
+    "uiFinding": "Installable package and chat UI are present; no WebMCP tools or documented invocation API are exposed.",
+    "documentationFinding": "Skill Engine v0.1.0 is documented as an installable package read by an AI agent, not an SDK or API."
+  },
+  "blocker": "No genuine callable SkillEngine interface is available, while the task forbids treating local SKILL.md reading as SkillEngine invocation.",
+  "substituteBuilt": false,
+  "transactionsPerformed": false,
+  "prosSpent": "0"
+}
